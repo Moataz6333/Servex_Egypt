@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service Controller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/homeController.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand" href="#">Servex_Egypt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">Products <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="editServices.html">Services <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="orders.html">Emails <span class="sr-only"></span></a>
+                </li>
+            </ul>
+            <a href="index.html" class="btn btn-dark ms-auto">Log-out</a>
+        </div>
+    </nav>
+    <div class="container">
+     
+        <h1 class="m-4 text-center">Edit Services</h1>
+                           <h2 class="m-4 text-center">Service 1</h2>
+            
+      <form method="POST"   class="mt-5 bg-light p-4">
+        <div class="form-group">
+            <label for="title">Service heading</label>
+            <input type="text" class="form-control"  name="title" value="Decoration and finishing works">
+          </div>
+          <div class="form-group">
+            <label for="body">Service paragraph</label>
+            <textarea class="form-control"   name="body" rows="3" >In the field of interior finishing and decoration, SERVEX_EGYPT Company provides professionalism and high quality for complete finishing works with a 6-month warranty on the work.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul">Service list</label>
+            <textarea class="form-control"   name="ul" rows="3"  placeholder="*element1
+*element2
+*element3">Suspended ceiling works
+Painting and lining works
+Floor installation and plumbing finishing
+Adjusting doors, windows and aluminum
+Locking the electrical boxes
+Finishing paints and decoration
+new list</textarea>
+          </div>
+            <hr>
+      
+        <div class="form-group">
+            <label for="title_ar">Service heading(AR)</label>
+            <input type="text" class="form-control" name="title_ar" value="اعمال التشطيب والديكور" >
+          </div>
+          <div class="form-group">
+            <label for="body_ar">Service paragraph(AR)</label>
+            <textarea class="form-control"  name="body_ar" rows="3" >في مجال التشطيبات الداخلية والديكور، تقدم شركة SERVEX_EGYPT الاحترافية والجودة العالية لأعمال التشطيبات الكاملة مع ضمان لمدة 6 أشهر على العمل.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul_ar">Service list(AR)</label>
+            <textarea class="form-control"   name="ul_ar" rows="3"  placeholder="*element1
+*element2
+*element3">أعمال الأسقف المعلقة
+أعمال الدهان والتبطين
+تركيب الأرضيات وإنهاء أعمال السباكة
+تعديل الأبواب والنوافذ والألومنيوم
+إقفال صناديق الكهرباء
+تشطيبات الدهانات والديكور </textarea>
+          </div>
+          <h2>Main Image </h2>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/WhatsApp Image 2024-08-12 at 8.48.50 PM (1).jpeg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="main_image">(Service Page Image)</label>
+            <input type="file" class="form-control-file"  name="main_image" >
+          </div>
+          <hr>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/Rectangle 32 (1).png" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="card_image">(Home Page Image)</label>
+            <input type="file" class="form-control-file"  name="card_image" >
+          </div>
+          <button class="btn btn-primary" type="submit">Update</button>
+      </form>
+
+      <div class="bg-light pl-4 pb-5">
+        <a href="addphotos1.html" class="btn btn-success text-center">Insert Photos</a>
+
+      </div >
+      
+      <form  method="POST" class="bg-light pl-4 mb-5 pb-5" onsubmit="return confirmDelete()">
+          <a href="#" class="btn btn-danger">Delete</a>
+      </form>
+      
+                   <h2 class="m-4 text-center">Service 2</h2>
+            
+      <form method="POST"  class="mt-5 bg-light p-4">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <div class="form-group">
+            <label for="title">Service heading</label>
+            <input type="text" class="form-control"  name="title" value="Exterior finishing">
+          </div>
+          <div class="form-group">
+            <label for="body">Service paragraph</label>
+            <textarea class="form-control"   name="body" rows="3" >The company also provides the best results for exterior finishes, such as night stands and solar power plants</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul">Service list</label>
+            <textarea class="form-control"   name="ul" rows="3"  placeholder="*element1
+*element2
+*element3">Garage construction
+Solar energy works
+Building finishing</textarea>
+          </div>
+            <hr>
+      
+        <div class="form-group">
+            <label for="title_ar">Service heading(AR)</label>
+            <input type="text" class="form-control" name="title_ar" value="اعمال التشطيب الخارجي" >
+          </div>
+          <div class="form-group">
+            <label for="body_ar">Service paragraph(AR)</label>
+            <textarea class="form-control"  name="body_ar" rows="3" >تقدم الشركة أيضًا أفضل النتائج لأعمال التشطيبات الخارجية، مثل الأعمدة الليلية ومحطات الطاقة الشمسية.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul_ar">Service list(AR)</label>
+            <textarea class="form-control"   name="ul_ar" rows="3"  placeholder="*element1
+*element2
+*element3">بناء الجراجات
+أعمال الطاقة الشمسية
+تشطيبات المباني </textarea>
+          </div>
+          <h2>Main Image </h2>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/p2.jpeg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="main_image">(Service Page Image)</label>
+            <input type="file" class="form-control-file"  name="main_image" >
+          </div>
+          <hr>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/g6.jpeg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="card_image">(Home Page Image)</label>
+            <input type="file" class="form-control-file"  name="card_image" >
+          </div>
+          <button class="btn btn-primary" type="submit">Update</button>
+      </form>
+
+      <div class="bg-light pl-4 pb-5">
+        <a href="addphotos1.html" class="btn btn-success text-center">Insert Photos</a>
+
+      </div >
+      
+      <form  method="POST" class="bg-light pl-4 mb-5 pb-5" onsubmit="return confirmDelete()">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <input type="hidden" name="_method" value="DELETE">        <button type="submit" class="btn btn-danger">Delete</button>
+
+      </form>
+      
+                   <h2 class="m-4 text-center">Service 3</h2>
+            
+      <form method="POST"  enctype="multipart/form-data" class="mt-5 bg-light p-4">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <div class="form-group">
+            <label for="title">Service heading</label>
+            <input type="text" class="form-control"  name="title" value="Propaganda and advertising">
+          </div>
+          <div class="form-group">
+            <label for="body">Service paragraph</label>
+            <textarea class="form-control"   name="body" rows="3" >We offer our services in designing and implementing all written, audio and visual commercial and marketing advertisements with a well-thought-out plan and multiple stages, as well as sponsored advertisements on all social and media outlets, which makes your commercial or industrial activity grow with a fixed plan.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul">Service list</label>
+            <textarea class="form-control"   name="ul" rows="3"  placeholder="*element1
+*element2
+*element3">Logo design and slogans
+Corporate visual identity design
+Advertisement design
+Video design</textarea>
+          </div>
+            <hr>
+      
+        <div class="form-group">
+            <label for="title_ar">Service heading(AR)</label>
+            <input type="text" class="form-control" name="title_ar" value="الدعايه والاعلان" >
+          </div>
+          <div class="form-group">
+            <label for="body_ar">Service paragraph(AR)</label>
+            <textarea class="form-control"  name="body_ar" rows="3" >نقدم خدماتنا في تصميم وتنفيذ جميع الإعلانات التجارية والتسويقية المكتوبة والصوتية والمرئية بخطة مدروسة ومراحل متعددة، بالإضافة إلى الإعلانات الممولة على جميع وسائل التواصل الاجتماعي والإعلام، مما يجعل نشاطك التجاري أو الصناعي ينمو بخطة ثابتة.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul_ar">Service list(AR)</label>
+            <textarea class="form-control"   name="ul_ar" rows="3"  placeholder="*element1
+*element2
+*element3">تصميم الشعارات واللوغو
+تصميم الهوية البصرية للشركات
+تصميم الإعلانات
+تصميم الفيديوهات </textarea>
+          </div>
+          <h2>Main Image </h2>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/marketing-ideas-share-research-planning-concept.jpg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="main_image">(Service Page Image)</label>
+            <input type="file" class="form-control-file"  name="main_image" >
+          </div>
+          <hr>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/Rectangle 32.png" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="card_image">(Home Page Image)</label>
+            <input type="file" class="form-control-file"  name="card_image" >
+          </div>
+          <button class="btn btn-primary" type="submit">Update</button>
+      </form>
+
+      <div class="bg-light pl-4 pb-5">
+        <a href="addphotos1.html" class="btn btn-success text-center">Insert Photos</a>
+
+      </div >
+      
+      <form  method="POST" class="bg-light pl-4 mb-5 pb-5" onsubmit="return confirmDelete()">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <input type="hidden" name="_method" value="DELETE">        <button type="submit" class="btn btn-danger">Delete</button>
+
+      </form>
+      
+                   <h2 class="m-4 text-center">Service 4</h2>
+            
+      <form method="POST"  enctype="multipart/form-data" class="mt-5 bg-light p-4">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <div class="form-group">
+            <label for="title">Service heading</label>
+            <input type="text" class="form-control"  name="title" value="Commercial Mediation">
+          </div>
+          <div class="form-group">
+            <label for="body">Service paragraph</label>
+            <textarea class="form-control"   name="body" rows="3" >We can provide any foreign product from its country of origin through our contact office in Frankfurt, Germany, as well as through our connections with commercial liaison offices abroad. Our advantages include precision in selection, quick execution within a specified time frame, and integrity in transactions. If new projects require the existing owners to engage in any type of partnership, you can reach many clients through our commercial brokerage services between establishments and companies. This helps you in achieving partnerships and injecting funds into new projects for expansion, ensuring continued progress without interruptions. We also facilitate the acquisition of buyers, and these qualities can be verified through our previous clients.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul">Service list</label>
+            <textarea class="form-control"   name="ul" rows="3"  placeholder="*element1
+*element2
+*element3">Providing the best offers
+Supervision and accuracy when receiving and examining orders
+Prepare all necessary documents for export outside Türkiye and send them to the recipient country</textarea>
+          </div>
+            <hr>
+      
+        <div class="form-group">
+            <label for="title_ar">Service heading(AR)</label>
+            <input type="text" class="form-control" name="title_ar" value="الوساطه التجارية" >
+          </div>
+          <div class="form-group">
+            <label for="body_ar">Service paragraph(AR)</label>
+            <textarea class="form-control"  name="body_ar" rows="3" >يمكننا توفير أي منتج أجنبي من بلده الأصلي من خلال مكتب الاتصال الخاص بنا في فرانكفورت، ألمانيا، وكذلك من خلال اتصالاتنا بمكاتب الربط التجاري في الخارج. تشمل مميزاتنا الدقة في الاختيار، والتنفيذ السريع في إطار زمني محدد، والنزاهة في المعاملات. إذا تطلبت المشاريع الجديدة من الملاك الحاليين الدخول في أي نوع من الشراكات، يمكنك الوصول إلى العديد من العملاء من خلال خدمات الوساطة التجارية بين المؤسسات والشركات. يساعدك ذلك في تحقيق شراكات وضخ أموال في مشاريع جديدة للتوسع، مما يضمن استمرارية التقدم دون انقطاع. كما نسهل عملية الحصول على المشترين، وهذه المميزات يمكن التحقق منها من خلال عملائنا السابقين.</textarea>
+          </div>
+          <div class="form-group">
+            <label for="ul_ar">Service list(AR)</label>
+            <textarea class="form-control"   name="ul_ar" rows="3"  placeholder="*element1
+*element2
+*element3">تقديم أفضل العروض
+الإشراف والدقة عند استلام وفحص الطلبات
+تحضير جميع الوثائق اللازمة للتصدير خارج تركيا وإرسالها إلى بلد المستلم </textarea>
+          </div>
+          <h2>Main Image </h2>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/two-businessman-analyzing-company-financial-report.jpg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="main_image">(Service Page Image)</label>
+            <input type="file" class="form-control-file"  name="main_image" >
+          </div>
+          <hr>
+          <div class="card mt-3 mb-4" >
+            <img class="card-img-top" src="./images/services/two-businessman-analyzing-company-financial-report.jpg" alt="Card image cap">
+          
+          </div>
+          <div class="form-group col mt-5 mb-5">
+            <label for="card_image">(Home Page Image)</label>
+            <input type="file" class="form-control-file"  name="card_image" >
+          </div>
+          <button class="btn btn-primary" type="submit">Update</button>
+      </form>
+
+      <div class="bg-light pl-4 pb-5">
+        <a href="addphotos1.html" class="btn btn-success text-center">Insert Photos</a>
+
+      </div >
+      
+      <form  method="POST" class="bg-light pl-4 mb-5 pb-5" onsubmit="return confirmDelete()">
+        <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">        <input type="hidden" name="_method" value="DELETE">        <button type="submit" class="btn btn-danger">Delete</button>
+
+      </form>
+      
+             
+    </div>
+    <script>function confirmDelete() {
+      return confirm('Are you sure you want to delete this service?');
+  }
+  </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

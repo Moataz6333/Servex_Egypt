@@ -1,0 +1,26 @@
+.productContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.productContainer .card:not(:first-child){
+    cursor: pointer;
+    transition: 0.8s;
+}
+.productContainer .card-body:not(:first-child){
+    display: none;
+}
+.productContainer .card:not(:first-child):hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);;
+}
+
+.photosContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}

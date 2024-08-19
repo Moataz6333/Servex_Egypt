@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Controller</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="./css/homeController.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand" href="#">Servex_Egypt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">Products <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="editServices.html">Services <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="orders.html">Emails <span class="sr-only"></span></a>
+                </li>
+            </ul>
+            <a href="index.html" class="btn btn-dark ms-auto">Log-out</a>
+        </div>
+    </nav>
+    <div class="container">
+              <h1 class="text-center mt-4">Update The Home Page</h1>
+        
+        <h2>1. Landing view </h2>
+        <div class="card" >
+            <img class="card-img-top" src="./images/screen/landing.png" alt="Card image cap">
+          
+          </div>
+        
+            <form class="mt-5 mb-5" >
+                <div class="row">
+                <div class="form-group col mt-5 mb-5">
+                    
+                  <label for="landingSlider1">Landing Slide 1  ( 935*550)</label>
+                  <input type="file" class="form-control-file" id="landingSlider1" name="landingSlider1">
+                </div>
+                <div class="form-group col mt-5 mb-5">
+                  <label for="landingSlider2">Landing Slide 2</label>
+                  <input type="file" class="form-control-file" id="landingSlider2" name="landingSlider2">
+                </div>
+                <div class="form-group col mt-5 mb-5">
+                  <label for="landingSlider3">Landing Slide 3</label>
+                  <input type="file" class="form-control-file" id="landingSlider3" name="landingSlider3">
+                </div>
+                <div class="form-group col mt-5 mb-5">
+                  <label for="landingSlider4">Landing Slide 4</label>
+                  <input type="file" class="form-control-file" id="landingSlider4" name="landingSlider4">
+                </div>
+            </div>
+           
+                <div class="form-group">
+                    <label for="popUp_h1">Pop-Up heading</label>
+                    <input type="text" class="form-control" id="popUp_h1" name="popUp_h1" value="You can get... If you want!">
+                  </div>
+
+            
+            <div class="form-group">
+                <label for="popUp_p">Pop-Up paragraph</label>
+                <textarea class="form-control" id="popUp_p"  name="popUp_p" rows="3">Our furniture is made from selected and best quality materials that are suitable for your dream home.</textarea>
+              </div>
+              
+                <div class="form-group">
+                    <label for="popUp_h1_ar">Pop-Up heading (AR) </label>
+                    <input type="text" class="form-control" id="popUp_h1_ar" name="popUp_h1_ar" value="إختر الرفيق قبل الطريق">
+                  </div>
+
+            
+            <div class="form-group">
+                <label for="popUp_p_ar">Pop-Up paragraph (AR)</label>
+                <textarea class="form-control" id="popUp_p_ar"  name="popUp_p_ar" rows="3"> نتولي تسويق منتجات مصنعكم وتحديد خطة لتسويق بضائعكم ، بثقة عالية شعارنا</textarea>
+              </div>
+              <hr>
+              <h2>Logo</h2>
+              
+              <hr>
+              <h2>2. Featues</h2>
+              <div class="card" >
+                <img class="card-img-top" src="./images/screen/features.png" alt="Card image cap">
+              
+              </div>
+              <div class="row">
+                <div class="form-group col mt-5 mb-5">
+                    <label for="feat1_img">feature 1 img ( 40*40)</label>
+                    <input type="file" class="form-control-file" id="feat1_img" name="feat1_img">
+                  </div>
+                <div class="form-group col mt-5 mb-5">
+                    <label for="feat2_img">feature 2 img</label>
+                    <input type="file" class="form-control-file" id="feat2_img" name="feat2_img">
+                  </div>
+                <div class="form-group col mt-5 mb-5">
+                    <label for="feat3_img">feature 3 img</label>
+                    <input type="file" class="form-control-file" id="feat3_img" name="feat3_img">
+                  </div>
+                <div class="form-group col mt-5 mb-5">
+                    <label for="feat4_img">feature 4 img</label>
+                    <input type="file" class="form-control-file" id="feat4_img" name="feat4_img">
+                  </div>
+              </div>
+              
+              <h3 class="mt-3 mb-3">feature title</h3>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 1" name="feat1_h4" value="High Quality">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 2" name="feat2_h4" value="Warrany Protection">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 3" name="feat3_h4" value="Free Shipping">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 4" name="feat4_h4" value="24/7 Support">
+                </div>
+              </div>
+              
+              <h3 class="mt-3 mb-3">feature paragraph</h3>
+              <div class="form-row ">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 1" name="feat1_p" value="crafted from top materials">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 2" name="feat2_p" value="Over 2 years">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 3" name="feat3_p" value="Order over 150 $">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 4" name="feat4_p" value="Dedicated support">
+                </div>
+              </div>
+              
+              <h3 class="mt-3 mb-3">feature title (AR)</h3>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 1" name="feat1_h4_ar" value="أعلي جوده">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 2" name="feat2_h4_ar" value="حماية الضمان">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 3" name="feat3_h4_ar" value="شحن مجاني">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="feat 4" name="feat4_h4_ar" value="خدمه عملاء 24 ساعه">
+                </div>
+              </div>
+               
+               <h3 class="mt-3 mb-3">feature paragraph (AR)</h3>
+               <div class="form-row ">
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="feat 1" name="feat1_p_ar" value="مصنوعه من اجود الخامات">
+                 </div>
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="feat 2" name="feat2_p_ar" value="أكثر من عامين">
+                 </div>
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="feat 3" name="feat3_p_ar" value="اطلب اكثر من 150دولار">
+                 </div>
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="feat 4" name="feat4_p_ar" value="دعم مخصص">
+                 </div>
+               </div>
+               <hr>
+               
+               <h2>3. Inspiration view</h2>
+               <div class="card" >
+                <img class="card-img-top" src="./images/screen/inspiration.png" alt="Card image cap">
+              </div>
+              <div class="row">
+                <div class="form-group col mt-5 mb-5">
+                    <label for="landingSlider1">Inspiration Slide 1 ( 515*645)</label>
+                    <input type="file" class="form-control-file" id="inspirationSlider1" name="inspirationSlider1">
+                  </div>
+                  <div class="form-group col mt-5 mb-5">
+                    <label for="landingSlider2">Inspiration Slide 2</label>
+                    <input type="file" class="form-control-file" id="inspirationSlider2" name="inspirationSlider2">
+                  </div>
+                  <div class="form-group col mt-5 mb-5">
+                    <label for="landingSlider3">Inspiration Slide 3</label>
+                    <input type="file" class="form-control-file" id="inspirationSlider3" name="inspirationSlider3">
+                  </div>
+                  <div class="form-group col mt-5 mb-5">
+                    <label for="landingSlider4">Inspiration Slide 4</label>
+                    <input type="file" class="form-control-file" id="inspirationSlider4" name="inspirationSlider4">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="inspiration_h1">Inspiration heading</label>
+                <input type="text" class="form-control" id="inspiration_h1" name="inspiration_h1"  value="A Beautiful rooms inspiration">
+              </div>
+
+        
+        <div class="form-group">
+            <label for="inspiration_p">Inspiration paragraph</label>
+            <textarea class="form-control" id="inspiration_p"  name="inspiration_p" rows="3">Our designer already made a lot of
+beautiful prototipe of rooms that inspire you</textarea>
+          </div>
+
+              <div class="form-group">
+                <label for="inspiration_h1_ar">Inspiration heading(AR)</label>
+                <input type="text" class="form-control" id="inspiration_h1_ar" name="inspiration_h1_ar"  value="اجمل التصاميم و الديكورات للغرف">
+              </div>
+
+        
+        <div class="form-group">
+            <label for="inspiration_p_ar">Inspiration paragraph(AR)</label>
+            <textarea class="form-control" id="inspiration_p_ar"  name="inspiration_p_ar" rows="3">&quot;قام مصممنا بالفعل بإعداد العديد من
+النماذج الجميلة للغرف التي ستلهمك.&quot;</textarea>
+          </div>
+          <hr>
+          
+          <h2>4. About </h2>
+          <div class="card mb-5" >
+           <img class="card-img-top" src="./images/screen/about.png" alt="Card image cap">
+         </div>
+         <div class="form-group col mt-5 mb-5">
+                    
+          <label for="aboutImage">About Image</label>
+          <input type="file" class="form-control-file" id="aboutImage" name="aboutImage">
+        </div>
+         <div class="form-group">
+            <label for="about_h1">About heading</label>
+            <input type="text" class="form-control" id="about_h1" name="about_h1" value="Experience since we started in 1980">
+          </div>
+          <div class="form-group">
+            <label for="about_p">About paragraph</label>
+            <textarea class="form-control" id="about_p"  name="about_p" rows="3">Servix Egypt Group provides design and implementation services for decoration, all building finishing works, and commercial brokerage
+We have a special department for advertising and commercial marketing</textarea>
+          </div>
+         <div class="form-group">
+            <label for="about_h1_ar">About heading(AR)</label>
+            <input type="text" class="form-control" id="about_h1_ar" name="about_h1_ar" value="خبرة منذ بدأنا عام 1980" >
+          </div>
+          <div class="form-group">
+            <label for="about_p_ar">About paragraph(AR)</label>
+            <textarea class="form-control" id="about_p_ar"  name="about_p_ar" rows="3">يقدم جروب سيرفيكس ايجيبت خدمات تصميم وتنفيذ الديكور وجميع اعمال تشطيبات المباني والوساطة التجارية
+لدينا ايضا قسم خاص للدعايه والاعلان</textarea>
+          </div>
+          <hr>
+          <h2>Logo</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="logo">Logo img :</label>
+            <input type="file" class="form-control-file" id="logo" name="logo">
+          </div>
+          <hr>
+          <h2>WhatsApp</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="whatsapp">WhatsApp number :</label>
+            <input type="text" class="form-control" id="whatsapp" name="whatsapp" placeholder="+2015*******" value="+201503186031">
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="phone">Phones</label>
+            <textarea class="form-control" id="phone"  name="phone" rows="3" placeholder="phone1
+phone2
+phone3...">+201080748014</textarea>
+          </div>
+          <hr>
+          <h2>Email</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="email">Email :</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="email@gmail.com" value="Info@servex-egypt.com">
+          </div>
+          <hr>
+          <h2>Facebook</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="facebook">Facebook :</label>
+            <input type="text" class="form-control" id="facebook" name="facebook" placeholder="facebook line" value="https://www.facebook.com/share/9uXpyoKB79BT3gbr/?mibextid=LQQJ4d">
+          </div>
+          <hr>
+          <h2>Instagram</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="instagram">Instagram :</label>
+            <input type="text" class="form-control" id="instagram" name="instagram" placeholder="instagram link" value="https://www.instagram.com/gamalmustafa1?igsh=eTA3cmZtNGMxd3dr&amp;utm_source=qr">
+          </div>
+          <hr>
+          <h2>Back IP</h2>
+          <div class="form-group col mt-5 mb-5">
+            <label for="bankIP">Bank IP :</label>
+            <input type="text" class="form-control" id="bankIP" name="bankIP" placeholder="555*****" value="EG530010003400000100054764981">
+          </div>
+          
+
+          <button type="submit" class="btn btn-primary">Update</button>
+              </form>
+         
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

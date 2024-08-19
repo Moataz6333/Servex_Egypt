@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orders</title>
+    <title>Service Controller</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/homeController.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand" href="#">Servex_Egypt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="products.html">Products <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="editServices.html">Services <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="orders.html">Emails <span class="sr-only"></span></a>
+                </li>
+            </ul>
+            <a href="index.html" class="btn btn-dark ms-auto">Log-out</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center m-4">Orders</h1>
+                        <div class="card m-3" style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Email :moataz@gmail.com</h5>
+              <h6 class="card-subtitle mb-2 text-muted">moataz</h6>
+              <h4 class="card-titile">test 2</h4>
+              <pre class="card-text">this is the second email sended
+for testing</pre>
+              <p class="text-right">sended at :<br> 2024-08-17 10:53 am</p>
+              <a href="mailto:moataz@gmail.com" class="btn btn-primary">
+                Reply
+            </a>
+            <form  method="POST" class="text-end"  onsubmit="return confirmDelete()">
+                <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">                <input type="hidden" name="_method" value="DELETE">                <button type="submit" class="btn btn-danger ">Delete</button>
+
+              </form>
+             
+            </div>
+          </div>
+            
+                <div class="card m-3" style="width: 80%;">
+            <div class="card-body">
+              <h5 class="card-title">Email :moatazahmed@laravel.com</h5>
+              <h6 class="card-subtitle mb-2 text-muted">moataz</h6>
+              <h4 class="card-titile">test 1</h4>
+              <pre class="card-text">some subject</pre>
+              <p class="text-right">sended at :<br> 2024-08-17 01:23 am</p>
+              <a href="mailto:moatazahmed@laravel.com" class="btn btn-primary">
+                Reply
+            </a>
+            <form  method="POST" class="text-end"  onsubmit="return confirmDelete()">
+                <input type="hidden" name="_token" value="837ZFj6MDiY0f2Ifvv4TAYWl6WPAQOU6Gs5kAxOo" autocomplete="off">                <input type="hidden" name="_method" value="DELETE">                <button type="submit" class="btn btn-danger ">Delete</button>
+
+              </form>
+             
+            </div>
+          </div>
+            
+            </div>
+    <script>function confirmDelete() {
+        return confirm('Are you sure you want to delete this order?');
+    }
+    </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+          <!-- Popper JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          
+          <!-- Bootstrap JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
